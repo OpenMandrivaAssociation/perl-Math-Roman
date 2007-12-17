@@ -12,7 +12,6 @@ Group:		Development/Perl
 Source:		ftp.perl.org/pub/CPAN/modules/by-module/Math/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Well, it seems I have been infected by the Perligata-Virus, too. ;o)
