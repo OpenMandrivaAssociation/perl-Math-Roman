@@ -1,15 +1,15 @@
 %define upstream_name	 Math-Roman
-%define upstream_version 1.07
+%define upstream_version 1.10
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Arbitrary sized Roman numbers and conversion from and to Arabic
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp.perl.org/pub/CPAN/modules/by-module/Math/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/pjacklam/p5-Math-Roman
+Source0:	https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-Roman-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
