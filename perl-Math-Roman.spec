@@ -1,15 +1,13 @@
 %define upstream_name	 Math-Roman
-%define upstream_version 1.10
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.10
+Release:	2
 
 Summary:	Arbitrary sized Roman numbers and conversion from and to Arabic
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/pjacklam/p5-Math-Roman
-Source0:	https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-Roman-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-Roman-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ integers. The numbers can have arbitrary length and all the usual functions
 from Math::BigInt are available.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -44,9 +42,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.70.0-1mdv2010.0
 + Revision: 403856
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.07-6mdv2009.0
+- rebuild using %1.10 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.07-6mdv2009.0
 + Revision: 241725
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
